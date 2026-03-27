@@ -1,0 +1,19 @@
+[project]
+name = "print-tui"
+version = "0.1.0"
+description = "Advanced printing utility wrapping CUPS with Textual."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "textual>=0.82.0",
+]
+
+
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]

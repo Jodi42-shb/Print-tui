@@ -1,0 +1,125 @@
+Screen {
+    background: $surface;
+}
+
+#main-container {
+    height: 100%;
+    layout: vertical;
+}
+
+TabbedContent {
+    height: 100%;
+}
+
+/* Printers View */
+PrintersView {
+    height: 100%;
+    layout: horizontal;
+}
+
+#printers-list {
+    width: 30%;
+    height: 100%;
+    border-right: solid $primary;
+}
+
+#printer-details {
+    width: 1fr;
+    height: 100%;
+    padding: 1 2;
+    overflow-y: auto;
+}
+
+.printer-title {
+    content-align: center middle;
+    text-style: bold;
+    padding: 1;
+    background: $panel;
+    color: $text;
+}
+
+.printer-state-idle {
+    color: $success;
+}
+
+.printer-state-printing {
+    color: $warning;
+}
+
+.option-list {
+    margin-top: 1;
+}
+
+/* Jobs View */
+JobsView {
+    height: 100%;
+    layout: vertical;
+}
+
+.jobs-table {
+    height: 1fr;
+    margin: 1;
+}
+
+#jobs-controls {
+    height: 3;
+    layout: horizontal;
+    align: center middle;
+    margin-bottom: 1;
+}
+
+Button {
+    margin: 0 1;
+}
+
+#cancel-button {
+    background: $error;
+    color: white;
+}
+
+/* Print Dialog */
+PrintDialogView {
+    height: 100%;
+    layout: vertical;
+    align: center middle;
+}
+
+#print-form {
+    width: 80%;
+    max-width: 80;
+    height: auto;
+    border: solid $primary;
+    padding: 1 2;
+    background: $panel;
+}
+
+.form-row {
+    layout: horizontal;
+    height: auto;
+    margin-bottom: 1;
+}
+
+.form-label {
+    width: 25%;
+    content-align: left middle;
+    padding-right: 1;
+}
+
+.form-input {
+    width: 1fr;
+}
+
+Select {
+    width: 100%;
+}
+
+Input {
+    width: 100%;
+}
+
+#print-button {
+    background: $success;
+    color: $text;
+    width: 100%;
+    margin-top: 1;
+}
